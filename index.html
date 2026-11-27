@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree's Birthday Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Birthday Invitation -->
+    <section id="invitation" class="invitation">
+        <h1>🎂 You're Invited! 🎂</h1>
+        <h2>Shree's Birthday</h2>
+        <p>A special celebration awaits you!</p>
+        <h3>📅 5th December 2026</h3>
+        <button id="openInvitation" type="button">OPEN INVITATION ❤️</button>
+    </section>
+
+    <!-- Visual-only mobile scan simulation -->
+    <section id="hackerScreen" class="hacker-screen" style="display:none;">
+        <h1>⚠ MOBILE SCAN SIMULATION ⚠</h1>
+        <p class="simulation-note">Just wait 30 second for connecting your mobile.</p>
+        <div class="scanner">
+            <div class="scanner-line"></div>Sound
+            <div class="scanner-center">📱</div>
+        </div>
+        <div id="messages" aria-live="polite"></div>
+        <h2 id="progress">0%</h2>
+        <div class="progress-bar"><div id="progressFill"></div></div>
+        <h2 id="countdown">00:30</h2>
+        <div id="finalMessage" aria-live="polite"></div>
+    </section>
+
+    <!-- The supplied WAV is used for the scan sound. It starts after the button click. -->
+    <audio id="scanSound" src="sound/mixkit.wav" preload="auto" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
